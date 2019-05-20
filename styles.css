@@ -1,0 +1,294 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    background-color: snow;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: Arial;
+  }
+
+.main-menu{
+  display: flex;
+
+  background-color: #5995DA;
+  height: 80px;
+}
+
+.menu-container{
+  width: 100%;
+  color: #fff;
+  background-color: #5995DA;  /* Blue */
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.menu{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo{
+  display: flex;
+  justify-content: flex-start;
+  padding: 5px;
+}
+
+.site-logo{
+  margin-left: 10px;
+}
+
+.links{
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px;
+}
+
+.login{
+  margin-left: 20px;
+}
+  
+.site-content {
+    flex: 1;
+  }
+
+.photo{
+  width: 100%;
+  background-image: url('/images/d234516f537e76c2e8fbd1cc1d82cfe2');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+}
+.choice-section {
+  display: flex;
+  background-color: #F5CF8E;
+}
+
+.choice{
+  background-color: magenta;
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.course{
+  display: flex;
+  align-items: center;
+}
+
+.course > img{
+  margin: auto 5px;
+}
+
+.content {
+  display: block;
+}
+
+.code-game-3D{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  margin-bottom: 30px;
+}
+
+.code,
+.game,
+.threeD{
+    padding: 5px;
+    border-bottom: 5px solid red;
+    font-weight: bold;
+}
+
+.game,
+.threeD{
+    margin-left: 80px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.coding-rows-container{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.coding-rows{
+  width: 1010px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.some-category{
+  display: flex;
+  padding-left: 140px;
+  margin: 0 0 5px 0;
+  font-weight: bold;
+}
+
+.row {
+  display: flex;
+  background-color: ghostwhite;
+  border: 0.5px solid gainsboro;
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
+  margin-left: 2px;
+}
+
+.long-box{
+  display: flex;
+  align-items : center;
+  border: 1px solid #fff;
+  width: 200px;
+  height: 200px;
+  border-radius: 8px; 
+}
+
+.lang-logo{
+  width: 100%;
+}
+
+.lang-logo > img{
+  display:flex;
+  margin: 8px auto;
+}
+
+.lang-logo > div{
+  padding-left:5px;
+}
+
+.rating{
+  margin-top: 12px;
+}
+.cash{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+  margin-top: 15px;
+}
+
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5995DA;
+  height: 60px;
+}
+
+.footer > p{
+  padding: 10px;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  .fore-text{
+    display: inline-block;
+    margin-left: 5px;
+    margin-top: 120px;
+    color: white;
+  }
+  .choice-section {
+    width: 100%;
+    height: 200px;
+  }
+  .game,
+  .threeD{
+    margin-left: auto;
+}
+  .course > span{
+    font-size: 13px;
+  }
+  .coding-rows{
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .row {
+    margin-top: 2px;
+  }
+  
+  .footer{
+    height: 120px;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .photo{
+    height: 380px;
+  }
+  .fore-text{
+    display: inline-block;
+    margin-top: 220px;
+    margin-left: 30px;
+    font-size: 1.4em;
+    color: white;
+  }
+  .choice-section {
+      width: 100%;
+      height: 180px;
+  }
+  .course{
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    font-size: 10px;
+  }
+  .course > span{
+    margin-left: 5px;
+  }
+  .row {
+    margin-top: 2px;
+  }
+  
+  .footer{
+    height: 60px;
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  .photo{
+    height: 600px;
+  }
+  .fore-text{
+    display: inline-block;
+    margin-top: 370px;
+    margin-left: 100px;
+    font-size: 1.4em;
+    color: white;
+  }
+  .choice-section{
+      width: 100%;
+      height: 80px;
+  }
+  .course{
+    display: flex;
+    align-items: center;
+    margin: 5px;
+  }
+  .course > span{
+    margin-left: 5px;
+  }
+  .online-courses{
+    margin-left: 60px;
+  }
+  .offline-download{
+    margin-right: 60px;
+  }
+
+}
