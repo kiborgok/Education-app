@@ -1,0 +1,355 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    background-color: snow;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: Arial;
+  }
+
+.main-menu{
+  display: flex;
+
+  background-color: #5995DA;
+  height: 80px;
+}
+
+.menu-container{
+  width: 100%;
+  color: #fff;
+  background-color: #5995DA;  /* Blue */
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.menu{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo{
+  display: flex;
+  justify-content: flex-start;
+  padding: 5px;
+}
+
+.site-logo{
+  margin-left: 10px;
+}
+
+.links{
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px;
+}
+
+.login{
+  margin-left: 20px;
+}
+  
+.site-content {
+    flex: 1;
+  }
+
+.photo{
+  background-image: url('/images/d234516f537e76c2e8fbd1cc1d82cfe2');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+
+}
+.choice-section {
+  display: flex;
+  background-color: #F5CF8E;
+}
+
+.choice{
+  background-color: magenta;
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.course{
+  display: flex;
+  align-items: center;
+}
+
+.course > img{
+  margin: auto 5px;
+}
+
+.content {
+  display: block;
+  
+}
+
+.code-game-3D{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  margin-bottom: 30px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.content > .code-game-3D > .tag > a{
+  color: black;
+  text-decoration:none;
+  padding-bottom: 3px;
+}
+
+.content > .code-game-3D > .tag > a.active, 
+.content > .code-game-3D > .tag > a:hover, 
+.content > .code-game-3D > .tag > a:focus {
+  color: black;
+  border-bottom: 3px solid red;
+}
+
+.game{
+    margin-left: 80px;
+}
+
+.coding-rows-container{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.coding-rows{
+  width: 1010px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.some-category{
+  display: flex;
+  padding-left: 140px;
+  margin: 0 0 5px 0;
+  font-weight: bold;
+}
+
+.row {
+  display: flex;
+}
+
+.long-box{
+  display: flex;
+  align-items : center;
+  border: 1px solid #fff;
+  width: 200px;
+  height: 200px;
+  border-radius: 8px; 
+  margin-top: 2px;
+}
+
+
+.lang-logo{
+  background-color: ghostwhite;
+  border: 0.5px solid gainsboro;
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
+  margin-left: 2px;
+}
+
+.lang-logo > img{
+  display:flex;
+  width: 90px;
+  height: 90px;
+  object-fit:scale-down;
+  margin: auto;
+}
+
+.lang-logo > div{
+  padding-left:5px;
+}
+
+.rating{
+  margin-top: 12px;
+}
+.cash{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+  margin-top: 15px;
+}
+
+/*Start of load-item.html css */
+.click-path{
+  display: flex;
+  height: 50px;
+  background-color: lightgray;
+}
+
+.lang-details{
+  display: flex;
+  height: 200px;
+  background-color: black;
+}
+
+.lang-details > .details{
+  display: block;
+  width: 380px;
+  padding-left: 70px;
+  padding-top: 30px;
+  color: white;
+}
+
+.lang-details > .details-logo{
+  border-radius: 0px;
+  display: flex;
+  align-self: flex-end;
+  background-color: white;
+  width: 250px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: 70px;
+  
+}
+
+.book-instructions{
+  display: flex;
+  align-self: flex-end;
+  background-color: white;
+  width: 250px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: 70px;
+  border: 1px solid lightgrey;
+}
+
+.add-to-cart{
+  display: flex;
+  align-self: flex-end;
+  background-color: white;
+  width: 250px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: 70px;
+  border: 1px solid lightgrey;
+}
+
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5995DA;
+  height: 60px;
+}
+
+.footer > p{
+  padding: 10px;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  .fore-text{
+    display: inline-block;
+    margin-left: 5px;
+    margin-top: 120px;
+    color: white;
+  }
+  .choice-section {
+    width: 100%;
+    height: 200px;
+  }
+  .game{
+    margin-left: auto;
+}
+  .course > span{
+    font-size: 13px;
+  }
+  .coding-rows{
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .footer{
+    height: 120px;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+
+  .content{
+    margin-left: 95px;
+  } 
+  .photo{
+    height: 380px;
+  }
+  .fore-text{
+    display: inline-block;
+    margin-top: 220px;
+    margin-left: 30px;
+    font-size: 1.4em;
+    color: white;
+  }
+  .choice-section {
+      width: 100%;
+      height: 180px;
+  }
+  .course{
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    font-size: 10px;
+  }
+  .course > span{
+    margin-left: 5px;
+  }
+  
+  .footer{
+    height: 60px;
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  .photo{
+    height: 600px;
+  }
+  .fore-text{
+    display: inline-block;
+    margin-top: 370px;
+    margin-left: 100px;
+    font-size: 1.4em;
+    color: white;
+  }
+  .choice-section{
+      width: 100%;
+      height: 80px;
+  }
+  .course{
+    display: flex;
+    align-items: center;
+    margin: 5px;
+  }
+  .course > span{
+    margin-left: 5px;
+  }
+  .online-courses{
+    margin-left: 60px;
+  }
+  .offline-download{
+    margin-right: 60px;
+  }
+
+}
