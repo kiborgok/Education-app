@@ -145,6 +145,7 @@ a{
 
 .row {
   display: flex;
+  margin-top: 5px;
 }
 
 .long-box{
@@ -181,6 +182,7 @@ a{
 
 .rating{
   margin-top: 12px;
+  margin-bottom: 8px;
 }
 .cash{
   display: flex;
@@ -219,29 +221,32 @@ a{
   height: 150px;
   margin-left: auto;
   margin-right: 70px;
-  
 }
 
-.book-instructions{
+.center-page{
   display: flex;
-  align-self: flex-end;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.book-instructions{
+  display: inline-table;
   background-color: white;
-  width: 250px;
-  height: 150px;
-  margin-left: auto;
-  margin-right: 70px;
+  width: 350px;
+  height: 200px;
   border: 1px solid lightgrey;
+  margin-top: 10px;
+  margin-left: 100px;
+  padding: 10px;
+
 }
 
 .add-to-cart{
   display: flex;
-  align-self: flex-end;
   background-color: white;
   width: 250px;
-  height: 150px;
-  margin-left: auto;
-  margin-right: 70px;
+  height: 180px;
   border: 1px solid lightgrey;
+  margin-right: 70px;
 }
 
 .footer{
@@ -250,6 +255,28 @@ a{
   align-items: center;
   background-color: #5995DA;
   height: 60px;
+}
+
+.author{
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+}
+.author-picture{
+  display: flex;
+}
+.author-picture > img{
+  display: flex;
+  width: 90px;
+  height: 90px;
+  object-fit: scale-down;
+  margin: 0 auto auto auto;
+}
+.author-profile{
+  width: 300px;
+  margin-left: 10px;
+  padding: 10px;
+  padding-top: 0px;
 }
 
 .footer > p{
@@ -279,6 +306,34 @@ a{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+  }
+  .lang-details > .details{
+    padding-right: 10px;
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+  .lang-details > .details-logo{
+    margin-right: 10px;
+    height: 130px;
+  }
+  .book-instructions{
+    width: 190px;
+    margin-left: 15px;
+    height: 150px;
+  }
+
+  .add-to-cart{
+    margin-right: 10px;
+    width: 140px;
+    margin-left: 15px;
+    height: 120px;
+  }
+
+  .some-category{
+    padding-left: 45px;
+  }
+  .author{
+    margin-left: 15px;
   }
   
   .footer{
@@ -315,6 +370,30 @@ a{
   .course > span{
     margin-left: 5px;
   }
+  .book-instructions{
+    margin-top: 10px;
+    margin-left: 0px;
+  
+  }
+  .some-category{
+    padding-left: 0px;
+  }
+  .content{
+    margin-left: 20px;
+  }
+  .lang-details > .details-logo{
+    margin-right: 10px;
+    width: 250px;
+  }
+  .lang-details > .details{
+    padding-left: 20px;
+  }
+  .add-to-cart{
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 150px;
+    width: 250px;
+  }
   
   .footer{
     height: 60px;
@@ -350,6 +429,34 @@ a{
   }
   .offline-download{
     margin-right: 60px;
+  }
+  .lang-details > .details{
+    width: 380px;
+    padding-left: 95px;
+  }
+
+  .book-instructions{
+    width: 400px;
+    border: 1px solid lightgrey;
+    margin-top: 10px;
+    margin-left: 140px;
+    height: 260px;
+  
+  }
+  .lang-details > .details-logo{
+    width: 300px;
+    height: 180px;
+    margin-right: 150px
+    
+  }
+  .add-to-cart{
+    width: 300px;
+    height: 200px;
+    margin-right: 150px;
+  }
+
+  .author{
+    margin-left: 180px;
   }
 
 }
