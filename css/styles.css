@@ -13,16 +13,34 @@ body {
   }
 
 .main-menu{
+  background-color: black;
+  opacity: 0.6;
   display: flex;
-
-  background-color: #5995DA;
+  filter: alpha(opacity=60);
   height: 80px;
+}
+
+.main-menu-white{
+  background-color: white;
+  display: flex;
+  height: 80px;
+}
+.menu-container-white{
+  width: 100%;
+  color: black;  
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.logo, .links{
+  opacity: 1;
+  filter: alpha(opacity=60);
 }
 
 .menu-container{
   width: 100%;
-  color: #fff;
-  background-color: #5995DA;  /* Blue */
+  color: #fff;  
   padding: 20px 0;
   display: flex;
   justify-content: center;
@@ -49,7 +67,6 @@ body {
   justify-content: flex-end;
   padding: 5px;
 }
-
 .login{
   margin-left: 20px;
 }
@@ -63,7 +80,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
-
 }
 .choice-section {
   display: flex;
@@ -72,6 +88,7 @@ body {
 
 .choice{
   background-color: magenta;
+  padding: 20px;
   color: white;
   width: 100%;
   display: flex;
@@ -223,6 +240,14 @@ a{
   margin-right: 70px;
 }
 
+.details-logo > img{
+  display:flex;
+  width: 150px;
+  height: 150px;
+  object-fit:scale-down;
+  margin: auto;
+}
+
 .center-page{
   display: flex;
   justify-content: space-between;
@@ -231,6 +256,7 @@ a{
 .book-instructions{
   display: inline-table;
   background-color: white;
+  font-weight: bold;
   width: 350px;
   height: 200px;
   border: 1px solid lightgrey;
@@ -242,19 +268,49 @@ a{
 
 .add-to-cart{
   display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
   background-color: white;
   width: 250px;
   height: 180px;
   border: 1px solid lightgrey;
   margin-right: 70px;
+
 }
 
-.footer{
+.cash-pay > p > span{
+  color: lightgray;
+  margin-left: 20px;
+}
+.the-cart > div{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #5995DA;
-  height: 60px;
+  width: 120px;
+  height: 25px;;
+  color: white;
+  background-color: red;
+  cursor: pointer;
+}
+.fb-twitter-mail{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  border-top: 0.5px solid lightgrey;
+  width: 100%;
+}
+.fb-twitter-mail > p{
+  font-weight: bold;
+  margin-top: 15px;
+}
+.fb-twitter-mail > a > img{
+  margin-top: 15px;
+  margin-left: 10px;
+  width: 20px;
+  height: 20px;
+  object-fit:scale-down;
 }
 
 .author{
@@ -277,6 +333,15 @@ a{
   margin-left: 10px;
   padding: 10px;
   padding-top: 0px;
+}
+.footer{
+  margin: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  height: 60px;
 }
 
 .footer > p{
