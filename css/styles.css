@@ -1,3 +1,4 @@
+/* General CSS */
 *{
   margin: 0;
   padding: 0;
@@ -12,25 +13,49 @@ body {
     font-family: Arial;
   }
 
-.main-menu{
-  background-color: black;
-  opacity: 0.6;
-  display: flex;
-  filter: alpha(opacity=60);
-  height: 80px;
+/*Left side of navigation bar*/
+.brand-name{
+  font-weight: bold;
+  color: black;
+}
+.red-t{
+  color: red;
 }
 
-.main-menu-white{
-  background-color: white;
+/*The whole navigation bar */
+.main-menu{
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: inherit;
   display: flex;
-  height: 80px;
+  filter: alpha(opacity=50);
+  height: 60px;
+  padding: 0 10px;
 }
-.menu-container-white{
-  width: 100%;
-  color: black;  
-  padding: 20px 0;
+.main-menu:hover{
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: inherit;
+  filter: alpha(opacity=20);
+}
+.category-search{
   display: flex;
-  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}
+.category-search > .category{
+  font-weight:bold;
+  color:black;
+}
+.category-search > .search{
+  margin-left: 80px;
+}
+.tutomix-instructor{
+  display: flex;
+  align-items: center;
+  margin: 5px;
+}
+
+.tutomix-instructor > .instructor{
+  margin-left: 60px;
 }
 
 .logo, .links{
@@ -43,7 +68,7 @@ body {
   color: #fff;  
   padding: 20px 0;
   display: flex;
-  justify-content: center;
+  align-items: center;
 }
 
 .menu{
@@ -54,8 +79,23 @@ body {
 
 .logo{
   display: flex;
-  justify-content: flex-start;
+  align-items: center;
   padding: 5px;
+}
+.image-logo{
+  border-style:dotted;
+  height:15px;
+  width:15px;
+  color:red;
+}
+.the-hr-line{
+  border:none;
+  border-top:3px dotted #f00;
+  color:red;
+  margin:auto;
+  margin-top:3px;
+  height:3px;
+  width:47%;
 }
 
 .site-logo{
@@ -64,23 +104,117 @@ body {
 
 .links{
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
   padding: 5px;
+  padding-top: 40px;
+  border-radius: 3px;
 }
+.signup:hover{
+  border-bottom: 3px solid red;
+  cursor: pointer;
+}
+
 .login{
-  margin-left: 20px;
+  margin-left: 10px;
+  cursor: pointer;
 }
-  
+.login:hover{
+  border-bottom: 3px solid red;
+}
+
+/* Different css for the load-item.html file navigation bar */
+.main-menu-white{
+  background-color: snow;
+  display: flex;
+  height: 60px;
+}
+.menu-container-white{
+  width: 100%;
+  color: black;  
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+}
+
+/* The main page */
 .site-content {
     flex: 1;
   }
 
+/* The backgroung image */
 .photo{
   background-image: url('/images/d234516f537e76c2e8fbd1cc1d82cfe2');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
 }
+
+/* The signup form modal form */
+.modal {
+  display: none;  
+  position: fixed;  
+  z-index: 1; left: 0; 
+  top: 0; 
+  width: 100%; 
+  height: 100%;  
+  overflow: auto;  
+  background-color: rgb(0,0,0);  
+  background-color: rgba(0,0,0,0.8);  
+  padding-top: 60px; 
+} 
+
+.modal-content { 
+  background-color: lightgray; 
+  margin: 5% auto 15% auto;  
+  border: 1px solid #888; 
+  width: 80%;   
+}
+
+input[type=text], input[type=email], input[type=password] { 
+  width: 100%; 
+  padding: 12px 20px; 
+  margin: 8px 0; 
+  display: inline-block; 
+  border: 1px solid black;
+ 
+}
+
+.close { 
+  position: absolute; 
+  right: 35px; 
+  top: 15px; 
+  color: red; 
+  font-size: 50px; 
+  font-weight: bold; 
+}
+
+.signupbtn {
+  width:40%;
+  background-color: red; 
+  color: white; 
+  padding: 14px 20px; 
+  margin: 8px 0; 
+  border: none; 
+  cursor: pointer; 
+}
+
+.form-inputs{ 
+  padding: 20px; 
+}
+
+.close:hover, 
+.close:focus { 
+    color: white; 
+    cursor: pointer; 
+} 
+
+.signup-modal-button{
+  display: flex;
+  justify-content: center;
+}
+
+/* The purple block */
+
 .choice-section {
   display: flex;
   background-color: #F5CF8E;
@@ -106,6 +240,8 @@ body {
   margin: auto 5px;
 }
 
+/* Holds the entire body content */
+
 .content {
   display: block;
   
@@ -117,6 +253,7 @@ body {
   align-items: center;
   height: 60px;
   margin-bottom: 30px;
+  padding: 10px;
 }
 
 a{
@@ -208,11 +345,11 @@ a{
   margin-top: 15px;
 }
 
-/*Start of load-item.html css */
+/*CSS consisting of load-item.html */
 .click-path{
   display: flex;
   height: 50px;
-  background-color: lightgray;
+  background-color: gainsboro;
 }
 
 .lang-details{
@@ -292,6 +429,7 @@ a{
   color: white;
   background-color: red;
   cursor: pointer;
+  border-radius: 10px;
 }
 .fb-twitter-mail{
   display: flex;
@@ -334,6 +472,8 @@ a{
   padding: 10px;
   padding-top: 0px;
 }
+
+/* The footer */
 .footer{
   margin: 0 10px;
   display: flex;
@@ -341,7 +481,7 @@ a{
   align-items: center;
   background-color: black;
   color: white;
-  height: 60px;
+  height: 50px;
 }
 
 .footer > p{
@@ -349,11 +489,48 @@ a{
 }
 
 /* Mobile Styles */
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 414px) {
+  .main-menu{
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: inherit;
+    display: flex;
+    filter: alpha(opacity=40);
+    height: 150px;
+    padding: 0 5px;
+  }
+  .the-center{
+    display: inline-block;
+  }
+  .category-search{
+    display: inline-block;
+    padding: 10px;
+  }
+  .category-search > .search{
+    margin-left: 0px;
+    margin-top: 5px;
+  }
+  .tutomix-instructor{
+    display: inline-block;
+    align-items: center;
+    margin: 5px;
+  }
+  .tutomix-instructor > .instructor{
+    margin-left: 0px;
+    margin-top: 5px;
+  }
+  .links{
+    display: inline-block;
+  }
+ 
+  .login{
+    margin-left: 0px;
+    margin-top: 5px;
+  }
+  
   .fore-text{
     display: inline-block;
     margin-left: 5px;
-    margin-top: 120px;
+    margin-top: 80px;
     color: white;
   }
   .choice-section {
@@ -383,22 +560,22 @@ a{
   }
   .book-instructions{
     width: 190px;
-    margin-left: 15px;
+    margin-left: 10px;
     height: 150px;
   }
 
   .add-to-cart{
     margin-right: 10px;
-    width: 140px;
+    width: 153px;
     margin-left: 15px;
     height: 120px;
   }
 
   .some-category{
-    padding-left: 45px;
+    padding-left: 25px;
   }
   .author{
-    margin-left: 15px;
+    margin-left: 30px;
   }
   
   .footer{
@@ -407,17 +584,33 @@ a{
 }
 
 /* Tablet Styles */
-@media only screen and (min-width: 401px) and (max-width: 960px) {
-
+@media only screen and (min-width: 415px) and (max-width: 767px) {
+  .modal-content { 
+    width: 80%;   
+  }
   .content{
     margin-left: 95px;
   } 
   .photo{
     height: 380px;
   }
+  .main-menu{
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: inherit;
+    display: flex;
+    filter: alpha(opacity=50);
+    height: 100px;
+    padding: 0 10px;
+  }
+  .category-search > .search{
+    margin-left: 30px;
+  }
+  .tutomix-instructor > .instructor{
+    margin-left: 30px;
+  }
   .fore-text{
     display: inline-block;
-    margin-top: 220px;
+    margin-top: 150px;
     margin-left: 30px;
     font-size: 1.4em;
     color: white;
@@ -466,9 +659,21 @@ a{
 }
 
 /* Desktop Styles */
-@media only screen and (min-width: 961px) {
+@media only screen and (min-width: 768px) {
+  .modal-content { 
+    width: 40%;   
+  }
+  .links{
+    padding-top: 0px;
+  }
   .photo{
     height: 600px;
+  }
+  .the-center{
+    display: flex;
+  }
+  .tutomix-instructor{
+    margin-left: 40px;
   }
   .fore-text{
     display: inline-block;
@@ -495,6 +700,9 @@ a{
   .offline-download{
     margin-right: 60px;
   }
+  .coding-rows-container{
+    margin-left: 70px;
+  }
   .lang-details > .details{
     width: 380px;
     padding-left: 95px;
@@ -504,24 +712,30 @@ a{
     width: 400px;
     border: 1px solid lightgrey;
     margin-top: 10px;
-    margin-left: 140px;
+    margin-left: 10px;
     height: 260px;
   
   }
   .lang-details > .details-logo{
     width: 300px;
     height: 180px;
-    margin-right: 150px
+    margin-right: 50px
     
   }
   .add-to-cart{
     width: 300px;
     height: 200px;
-    margin-right: 150px;
+    margin-right: 50px;
+  }
+  .some-category{
+    display: flex;
+    padding-left: 170px;
+    margin: 0 0 5px 0;
+    font-weight: bold;
   }
 
   .author{
-    margin-left: 180px;
+    margin-left: 80px;
   }
 
 }
