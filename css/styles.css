@@ -7,7 +7,7 @@
 
 body {
     display: flex;
-    background-color: snow;
+    background-color: white;
     min-height: 100vh;
     flex-direction: column;
     font-family: Arial;
@@ -109,31 +109,18 @@ body {
   padding-top: 40px;
   border-radius: 3px;
 }
-.signup:hover{
+
+.category:hover,
+.tutomix:hover, 
+.instructor:hover,
+.signup:hover,
+.login:hover{
   border-bottom: 3px solid red;
   cursor: pointer;
 }
 
 .login{
   margin-left: 10px;
-  cursor: pointer;
-}
-.login:hover{
-  border-bottom: 3px solid red;
-}
-
-/* Different css for the load-item.html file navigation bar */
-.main-menu-white{
-  background-color: snow;
-  display: flex;
-  height: 60px;
-}
-.menu-container-white{
-  width: 100%;
-  color: black;  
-  padding: 20px 0;
-  display: flex;
-  align-items: center;
 }
 
 /* The main page */
@@ -143,7 +130,7 @@ body {
 
 /* The backgroung image */
 .photo{
-  background-image: url('/images/d234516f537e76c2e8fbd1cc1d82cfe2');
+  background: url('/images/d234516f537e76c2e8fbd1cc1d82cfe2');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
@@ -168,6 +155,13 @@ body {
   margin: 5% auto 15% auto;  
   border: 1px solid #888; 
   width: 80%;   
+}
+
+.signup-learning{
+  padding-bottom:15px;
+  padding-left:20px;
+  padding-top:15px;
+  border-bottom:2px solid black;
 }
 
 input[type=text], input[type=email], input[type=password] { 
@@ -213,6 +207,21 @@ input[type=text], input[type=email], input[type=password] {
   justify-content: center;
 }
 
+.terms-conditions{
+  padding-bottom:15px;
+  padding-top:30px;
+  padding-left:20px;
+  border-bottom:2px solid black;
+}
+
+.login-in-signup{
+  display:flex;
+  justify-content:center;
+  margin:auto;
+  padding-top:6px;
+  height:30px;
+}
+
 /* The purple block */
 
 .choice-section {
@@ -237,7 +246,12 @@ input[type=text], input[type=email], input[type=password] {
 }
 
 .course > img{
-  margin: auto 5px;
+  display:flex;
+  width: 35px;
+  height: 35px;
+  object-fit:scale-down;
+  margin: auto;
+  
 }
 
 /* Holds the entire body content */
@@ -314,12 +328,19 @@ a{
 
 
 .lang-logo{
-  background-color: ghostwhite;
+  background-color: white;
   border: 0.5px solid gainsboro;
   width: 200px;
   height: 200px;
   border-radius: 8px;
   margin-left: 2px;
+  box-shadow: 0px 8px 10px 0px grey;
+}
+
+.lang-logo:hover,
+.lang-logo:focus {
+  box-shadow: 6px 10px 12px 0px grey;
+  
 }
 
 .lang-logo > img{
@@ -338,6 +359,9 @@ a{
   margin-top: 12px;
   margin-bottom: 8px;
 }
+.rating > p > span:hover{
+  margin-left: 3px;
+}
 .cash{
   display: flex;
   justify-content: flex-end;
@@ -346,8 +370,22 @@ a{
 }
 
 /*CSS consisting of load-item.html */
+.main-menu-white{
+  background-color: white;
+  display: flex;
+  height: 60px;
+}
+.menu-container-white{
+  width: 100%;
+  color: black;  
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+}
 .click-path{
   display: flex;
+  align-items: center;
+  padding-left: 30px;
   height: 50px;
   background-color: gainsboro;
 }
@@ -475,7 +513,7 @@ a{
 
 /* The footer */
 .footer{
-  margin: 0 10px;
+  padding: 0 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
