@@ -1,3 +1,4 @@
 # Education-app
 Web app
-This web app enables programmers to get books of their choice.
+1. This web app enables programmers to get programming course books of their choice.
+2. Data is served via ajax-json.
