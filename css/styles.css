@@ -538,10 +538,11 @@ a{
   }
   .the-center{
     display: inline-block;
+    max-height: min-content;
   }
   .category-search{
     display: inline-block;
-    padding: 10px;
+    padding-top: 5px;
   }
   .category-search > .search{
     margin-left: 0px;
@@ -558,6 +559,14 @@ a{
   }
   .links{
     display: inline-block;
+    justify-content: center;
+    margin-top: 15px;
+    margin-right: 5px;
+    padding: 5px;
+  }
+  .load-item-link{
+    max-height: 50px;
+    margin-top: 8px;
   }
  
   .login{
