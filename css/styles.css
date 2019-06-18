@@ -13,6 +13,11 @@ body {
     font-family: Arial;
   }
 
+#loader{
+  display:block;
+  margin:auto;  
+}
+
 /*Left side of navigation bar*/
 .brand-name{
   font-weight: bold;
@@ -106,7 +111,7 @@ body {
   display: flex;
   align-items: center;
   padding: 5px;
-  padding-top: 40px;
+  
   border-radius: 3px;
 }
 
@@ -293,6 +298,7 @@ a{
 }
 
 .coding-rows-container{
+  margin-left: 0px;
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
@@ -382,6 +388,12 @@ a{
   display: flex;
   align-items: center;
 }
+.logo-and-center{
+  display: flex;
+}
+.center-item{
+  margin-left: 100px;
+}
 .click-path{
   display: flex;
   align-items: center;
@@ -409,7 +421,7 @@ a{
   display: flex;
   align-self: flex-end;
   background-color: white;
-  width: 250px;
+  width: 295px;
   height: 150px;
   margin-left: auto;
   margin-right: 70px;
@@ -417,8 +429,8 @@ a{
 
 .details-logo > img{
   display:flex;
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px; 
   object-fit:scale-down;
   margin: auto;
 }
@@ -528,6 +540,9 @@ a{
 
 /* Mobile Styles */
 @media only screen and (max-width: 414px) {
+  .main-menu-white{
+    height: 90px;
+  }
   .main-menu{
     background-color: rgba(0, 0, 0, 0.5);
     opacity: inherit;
@@ -539,7 +554,9 @@ a{
   .the-center{
     display: inline-block;
     max-height: min-content;
+    margin-left: 10px;
   }
+
   .category-search{
     display: inline-block;
     padding-top: 5px;
@@ -596,14 +613,21 @@ a{
     justify-content: center;
     flex-wrap: wrap;
   }
+  .lang-details{
+    display: flex;
+    height: auto;
+    background-color: black;
+  }
   .lang-details > .details{
-    padding-right: 10px;
-    padding-left: 20px;
-    padding-top: 20px;
+    padding: 20px 10px 10px 20px;
+    display: flex;
+    flex-direction: column;
+    width: auto;
   }
   .lang-details > .details-logo{
     margin-right: 10px;
     height: 130px;
+    width: 235px;
   }
   .book-instructions{
     width: 190px;
@@ -648,6 +672,9 @@ a{
     filter: alpha(opacity=50);
     height: 100px;
     padding: 0 10px;
+  }
+  .category-search > .category{
+    padding-left: 30px;
   }
   .category-search > .search{
     margin-left: 30px;
@@ -747,9 +774,6 @@ a{
   .offline-download{
     margin-right: 60px;
   }
-  .coding-rows-container{
-    margin-left: 70px;
-  }
   .lang-details > .details{
     width: 380px;
     padding-left: 95px;
@@ -776,13 +800,12 @@ a{
   }
   .some-category{
     display: flex;
-    padding-left: 170px;
-    margin: 0 0 5px 0;
+    margin: 0 0 10px 0;
     font-weight: bold;
   }
 
   .author{
-    margin-left: 80px;
+    margin-left: 160px;
   }
 
 }
