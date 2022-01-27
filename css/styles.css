@@ -135,7 +135,7 @@ body {
 
 /* The backgroung image */
 .photo{
-  background: url('/images/d234516f537e76c2e8fbd1cc1d82cfe2');
+  background: url('./images/d234516f537e76c2e8fbd1cc1d82cfe2');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
